@@ -1,6 +1,4 @@
 
-
-<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
@@ -11,7 +9,7 @@
 <body>
   <header>
     <div class="brand">
-      <div class="logo" aria-hidden="true">PP</div>
+      <div class="logo" aria-hidden="true"></div>
       <div>
         <h1>O Pequeno Príncipe</h1>
         <div class="description">Projeto com foco em literatura e acessibilidade digital</div>
