@@ -29,12 +29,10 @@
           <h3>Sobre o livro</h3>
           <p><strong>O Pequeno Príncipe</strong> foi escrito por <em>Antoine de Saint-Exupéry</em>, publicado em 1943. É uma das obras literárias mais traduzidas do mundo e traz reflexões sobre amizade, amor, responsabilidade e o olhar inocente da infância.</p>
         </div>
-
         <div class="section">
           <h3>Sobre o filme</h3>
           <p>Em 2015, foi lançado o filme <em>O Pequeno Príncipe</em>, dirigido por Mark Osborne. A animação mistura técnicas de stop-motion e 3D, trazendo a história para um novo público, mas mantendo a essência poética e filosófica da obra original.</p>
         </div>
-
         <div class="section">
           <h3>Principais Temas</h3>
           <ul>
@@ -45,12 +43,10 @@
           </ul>
         </div>
       </section>
-
       <aside class="card" aria-labelledby="a11y-title">
         <h2 id="a11y-title">Menu de Acessibilidade</h2>
         <div class="a11y">
           <p class="muted">Personalize a interface: tamanho da fonte, contraste e movimentos.</p>
-
           <div>
             <label for="font-size-range">Tamanho da fonte</label>
             <div class="controls">
@@ -59,21 +55,18 @@
               <button class="btn" id="increase-font" aria-label="Aumentar fonte">A+</button>
             </div>
           </div>
-
           <div>
             <label for="contrast-toggle">Modo alto contraste</label>
             <div class="controls">
               <button class="btn" id="toggle-contrast" aria-pressed="false">Ativar contraste</button>
             </div>
           </div>
-
           <div>
             <label for="motion-toggle">Reduzir movimentos</label>
             <div class="controls">
               <button class="btn" id="toggle-motion" aria-pressed="false">Reduzir animações</button>
             </div>
           </div>
-
           <div>
             <button class="btn" id="reset" aria-label="Restaurar padrões">Restaurar padrões</button>
           </div>
