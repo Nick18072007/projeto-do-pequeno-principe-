@@ -78,66 +78,8 @@
   <div class="aria-status" aria-live="polite" id="a11y-status"></div>
 
   <footer>
-    <small>© Projeto O Pequeno Príncipe — Inspirado na obra de Antoine de Saint-Exupéry</small>
+    <small>© Projeto O Pequeno Príncipe — Inspirado na obra de Antoine de Saint-Exupéry - Feito por Nicolle Feirreira</small>
   </footer>
-
-  <script>
-    const root = document.documentElement;
-    const range = document.getElementById('font-size-range');
-    const inc = document.getElementById('increase-font');
-    const dec = document.getElementById('decrease-font');
-    const toggleContrast = document.getElementById('toggle-contrast');
-    const resetBtn = document.getElementById('reset');
-    const status = document.getElementById('a11y-status');
-    const toggleMotion = document.getElementById('toggle-motion');
-
-    function announce(msg){ status.textContent = msg; }
-
-    function setFontSize(size){
-      root.style.setProperty('--base-font', size + 'px');
-      range.value = size;
-      announce('Tamanho da fonte: ' + size + 'px');
-    }
-    inc.addEventListener('click', ()=> setFontSize(Math.min(Number(range.max), Number(range.value)+1)));
-    dec.addEventListener('click', ()=> setFontSize(Math.max(Number(range.min), Number(range.value)-1)));
-    range.addEventListener('input', (e)=> setFontSize(e.target.value));
-
-    function setContrast(on){
-      if(on){
-        document.body.classList.add('high-contrast');
-        toggleContrast.textContent = 'Desativar contraste';
-        toggleContrast.setAttribute('aria-pressed','true');
-        announce('Contraste ativado');
-      } else {
-        document.body.classList.remove('high-contrast');
-        toggleContrast.textContent = 'Ativar contraste';
-        toggleContrast.setAttribute('aria-pressed','false');
-        announce('Contraste desativado');
-      }
-    }
-    toggleContrast.addEventListener('click', ()=> setContrast(toggleContrast.getAttribute('aria-pressed')!=='true'));
-
-    function setMotion(on){
-      if(on){
-        document.documentElement.style.setProperty('scroll-behavior','auto');
-        toggleMotion.textContent = 'Animações reduzidas';
-        toggleMotion.setAttribute('aria-pressed','true');
-        announce('Movimentos reduzidos');
-      } else {
-        document.documentElement.style.removeProperty('scroll-behavior');
-        toggleMotion.textContent = 'Reduzir animações';
-        toggleMotion.setAttribute('aria-pressed','false');
-        announce('Movimentos normais');
-      }
-    }
-    toggleMotion.addEventListener('click', ()=> setMotion(toggleMotion.getAttribute('aria-pressed')!=='true'));
-
-    resetBtn.addEventListener('click', ()=>{
-      setFontSize(16);
-      setContrast(false);
-      setMotion(false);
-      announce('Preferências restauradas');
-    });
-  </script>
+  
 </body>
 </html>
